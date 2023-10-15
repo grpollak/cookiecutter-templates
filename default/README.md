@@ -1,45 +1,39 @@
-# Python Cookiecutter Template
+# Cookiecutter Templates
 
-This is a Cookiecutter template for generating a Python project structure. It follows a standardized project layout and includes essential files to kickstart your Python project.
+This repository hosts a collection of Cookiecutter templates to help you generate project structures and boilerplate code quickly and efficiently.
 
-## Install Cookiecutter
+## Installation
 
-```bash
-pip install cookiecutter 
-```
-
-## Usage
-
-To create a new Python project using this template, run the following command with Cookiecutter:
+Make sure you have Cookiecutter installed. If not, you can install it using pip:
 
 ```bash
-cookiecutter gh:grpollak.com/cookiecutter_termplates#default
+pip install cookiecutter
 ```
 
-You'll be prompted to enter project details such as project name, author, version, and description.
+## How to Use Cookiecutter
+
+To use Cookiecutter, you can generate a new project based on a template by running the following command:
+
+```bash
+cookiecutter gh:grpollak/cookiecutter-templates#<template-name>
+```
+
+Replace `<template-name>` with the name of the template you want to use.
+
+## Available Templates
+
+| Template Name                  | Description                                                  |
+|--------------------------------|--------------------------------------------------------------|
+| [Default Template](./defaults) | The default template for creating a basic project structure. |
+    
+
+## Contribution
+
+Feel free to contribute your own Cookiecutter templates to this repository and help the community by providing useful project scaffolding.
+
+If you have a template you'd like to add, fork this repository, create a new folder for your template, and submit a pull request.
 
 ## License
 
-This template provides the following licenses for your project:
+This repository and the templates are licensed under the [MIT License](https://opensource.org/license/mit/). Feel free to use, modify, and distribute them.
 
-- **MIT License**: A permissive open-source license that allows you to use, modify, and distribute the code with very few restrictions.
-
-- **Apache License 2.0**: A widely-used open-source license that grants extensive permissions to users for using, modifying, and distributing the software.
-
-- **GNU Affero General Public License 3.0 (AGPL-3.0)**: A copyleft license that ensures any modified version of the software remains under the AGPL-3.0 license.
-
-- **The Unlicense (Unlicense)**: A public domain dedication that allows contributors to waive all their copyright and related rights in their works.
-
-For more information on each license and to choose the appropriate one for your project, refer to [choosealicense.com](https://choosealicense.com/).
-
-## Project Structure
-
-The generated project structure will follow the standard Python project layout to organize your code in a clean and maintainable way. Here's a brief overview:
-
-- `{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}`: Your project directory.
-  - `__init__.py`: Initialization file for the package.
-  - `pyproject.toml`: Poetry configuration file.
-  - `README.md`: Project README file.
-  - `src/`: Source code directory.
-    - `__init__.py`: Initialization file for the source code package.
-    - `main.py`: Main application file.
