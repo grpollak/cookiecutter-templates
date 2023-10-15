@@ -1,0 +1,10 @@
+{
+    "author_name": "Georg R. Pollak",
+    "author_email": "pollakgeorg@gmail.com",
+    "project_name": "myproject",
+    "description": "My Description",
+    "github_username": "grpollak",
+    "project_version": "1.0",
+    "min_python_version": "3.12",
+    "license": ["MIT", "Apache-2.0", "AGPL-3.0-only", "Unlicense"]
+}
