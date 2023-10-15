@@ -22,10 +22,11 @@ Replace `<template-name>` with the name of the template you want to use.
 
 ## Available Templates
 
-| Template Name                  | Description                                                  |
-|--------------------------------|--------------------------------------------------------------|
-| [Default Template](./defaults) | The default template for creating a basic project structure. |
-    
+ | Template Name                              | Description                                                  | Status |
+ |--------------------------------------------|--------------------------------------------------------------|--------|
+ | [Default Template](./default)              | The default template for creating a basic project structure. | - [x]  |
+ | [Testing Template](./testing)              | Template for testing-related projects.                       | - [ ]  |
+ | [PyTorch Template](./pytorch)              | Template for PyTorch projects.                               | - [ ]  |
 
 ## Contribution
 
