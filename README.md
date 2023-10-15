@@ -15,7 +15,7 @@ pip install cookiecutter
 To use Cookiecutter, you can generate a new project based on a template by running the following command:
 
 ```bash
-cookiecutter gh:grpollak/cookiecutter-templates#<template-name>
+cookiecutter gh:grpollak/cookiecutter-templates --directory="<template-name>"
 ```
 
 Replace `<template-name>` with the name of the template you want to use.
