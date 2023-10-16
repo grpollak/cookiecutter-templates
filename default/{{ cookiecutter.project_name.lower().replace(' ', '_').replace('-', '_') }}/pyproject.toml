@@ -1,17 +1,22 @@
 [tool.poetry]
-name = "{{ cookiecutter.project_name }}"
+name = "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}"
 authors = ["{{ cookiecutter.author_name }} <{{ cookiecutter.author_email }}>"]
 version = "{{ cookiecutter.project_version }}"
 description = "{{ cookiecutter.description }}"
 
 [tool.poetry.dependencies]
 python = "^{{ cookiecutter.min_python_version }}"
+typer = {extras = ["all"], version = "*"}
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+# Cli
+[tool.poetry.scripts]
+greet = "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}.{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}:run"
 
 # Linting
 [tool.pylint.'message-control']
